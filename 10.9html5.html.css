@@ -1,0 +1,289 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    list-style: none;
+}
+.box{
+    width: 80%;
+    margin: 0 auto;
+}
+.box1 .you li:nth-of-type(3){
+    color: red;
+
+}
+.box1 li{
+    float: left;
+    line-height: 30px;
+    font-size: 13px;
+
+}
+.box1 .zuo {
+    float: right;
+
+}
+.box1 .zuo li:nth-of-type(n){
+    border-right: solid 1px #000000;
+    height: 5px;
+    line-height: 5px;
+    padding: 5px 8px;
+    margin-top: 5px;
+
+}
+
+.box1{
+    height: 30px;
+    background: #F8F8F8;
+    position: relative;
+}
+.q1 {
+    background: url("作业/img/home_sprite.png") no-repeat -35px -86px;
+    display: inline-block;
+    width: 22px;
+    height: 17px;
+    position: absolute;
+    top: 6px;
+    left: 595px;
+
+
+
+
+
+}
+.box2{
+    background: #FD2732;
+    height: 35px;
+}
+.box2 li:nth-of-type(n){
+    float: left;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 35px;
+    color: white;
+    position: relative;
+
+}
+nav .box2 ul li:first-of-type::before{
+    background: url("作业/img/home_sprite.png")no-repeat -10px -80px;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 190px;
+
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+
+}
+.box2 ul li:nth-of-type(2){
+    padding-left: 100px;
+
+}
+
+
+
+
+.sec{
+    margin-top: 20px;
+}
+
+h3{
+    background: #497B70 ;
+    color: white;
+    height: 30px;
+    width: 156px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.aox1{
+    height: 455px;
+    width: 150px;
+
+    padding: 0 2px;
+}
+
+article{
+    height: 465px;
+    width: 155px;
+    border: 1px solid #497B70;
+}
+.dao1 li:nth-of-type(n){
+    color: #497B70;
+    font-size: 16px;
+    border-bottom: dashed 1px ;
+    padding: 5px 0;
+   
+}
+article .s1{
+    color: #497B70;
+    padding: 5px 0;
+    display: block;
+}
+.dao2 li{
+    float: left;
+    border-right: solid 1px #000000;
+    font-size: 12px;
+   padding: 2px;
+    height: 5px;
+    line-height: 5px;
+    margin: 5px 0px;
+
+
+
+
+
+}
+.dao2{
+    height: 20px;
+}
+
+.dao2 li:nth-of-type(4){
+    border-right: none;
+}
+
+.aox1 p{
+   color: #497B70;
+    border-top: dashed 1px;
+    padding: 5px 0;
+
+
+}
+
+.dao3 li{
+    float: left;
+    border-right: solid 1px #000000;
+    font-size: 12px;
+    padding: 2px;
+    height: 5px;
+    line-height: 5px;
+    margin: 5px 0px;
+
+
+}
+.dao3 li:last-of-type{
+    border: none;
+}
+.dao3{
+    height: 20px;
+}
+
+
+.aox1 p{
+    color: #497B70;
+    border-top: solid 1px;
+    padding: 5px 0;
+
+
+}
+
+
+.dao4 li{
+    float: left;
+    border-right: solid 1px #000000;
+    font-size: 12px;
+    padding: 2px;
+    height: 5px;
+    line-height: 5px;
+    margin: 5px 0px;
+
+
+}
+.dao4 li:last-of-type{
+    border: none;
+}
+.dao4 {
+    height: 40px;
+
+}
+
+
+
+
+
+
+
+
+.dao5 li{
+    float: left;
+    border-right: solid 1px #000000;
+    font-size: 12px;
+    padding: 2px;
+    height: 5px;
+    line-height: 5px;
+    margin: 5px 0px;
+
+
+}
+.dao5 li:last-of-type{
+    border: none;
+}
+.dao5 {
+    height: 60px;
+
+}
+
+
+
+
+
+.zhong{
+    height: 650px;
+    width: 760px;
+
+
+    position: absolute;
+    top: 200px;
+    left: 298px;
+
+}
+.shu1 li:first-of-type::before{
+   content: url("作业/img/xsq.png");
+    position: absolute;
+    top: 370px;
+    left: 95px;
+
+
+}
+.shu2 li:first-of-type{
+    color: #D6D6D6;
+}
+.shu2{
+    margin-top: 15px;
+}
+.shu2 li:nth-of-type(2){
+    color: red;
+}
+.shu2  span{
+text-decoration: line-through;
+    color: #D6D6D6;
+}
+
+
+.shu1 li:first-of-type::before{
+    content: url("作业/img/xsq.png");
+    position: absolute;
+    top: 370px;
+    left: 95px;
+
+
+}
+.shu2 li:first-of-type{
+    color: #D6D6D6;
+}
+.shu2{
+    margin-top: 15px;
+}
+.shu2 li:nth-of-type(2){
+    color: red;
+}
+.shu2  span{
+    text-decoration: line-through;
+    color: #D6D6D6;
+}
+
+.hou1{
+    float: left;
+    margin: 20px;
+}

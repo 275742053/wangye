@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+            width: 248px;
+            margin: 100px auto;
+        }
+        li{
+            width: 60px;
+            height: 90px;
+            border: solid #bcbcbc 1px;
+            float: left;
+           margin-left: -1px;
+            margin-top: -1px;
+            text-align: center;
+            position: relative;
+
+
+
+        }
+
+        i{
+            width: 24px;
+            height: 24px;
+          background: url("bg.png") no-repeat ;
+            display: block;
+          margin: 0 auto;
+            margin-top: 20px;
+
+        }
+        .w::before{
+            content: '';
+            background: url("效果图.jpg") no-repeat -110px -5px ;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            left: -17px;
+
+
+
+        }
+        .q::before{
+            content: '';
+            background: url("效果图.jpg") no-repeat -110px -5px ;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            left: 105px;
+
+
+
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li> <i></i> 话费</li>
+    <li class="q"> <i></i>机票</li>
+    <li class="w"> <i></i>酒店</li>
+    <li> <i></i>游戏</li>
+    <li> <i></i>企业购</li>
+    <li> <i></i>加油卡</li>
+    <li> <i></i>电影票</li>
+    <li> <i></i>火车票</li>
+    <li> <i></i>众筹</li>
+    <li> <i></i>理财</li>
+    <li> <i></i>礼品卡</li>
+    <li> <i></i>白条</li>
+</ul>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+<script>
+    var index=0;
+    var d=document.querySelectorAll('i');
+    for(var i= 0,k=0;i< d.length;i++,k++){
+
+        if(i===4||i===8){
+            index++;
+            i=0;
+            if(index===3)break
+        }
+        d[k].style.backgroundPosition=-i*44+'px '+-index*44+'px'
+
+    }
+</script>
+</html>
