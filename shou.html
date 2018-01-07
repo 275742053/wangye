@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+
+        }
+        .box{
+            width:400px;
+            height: 500px;
+            margin: 50px auto;
+            border: 1px solid;
+            overflow: hidden;
+
+
+        }
+        ul{
+            width: 133px;
+            height: 500px;
+            float: left;
+        }
+
+        li{
+            width: 266px;
+            height: 500px;
+            float: left;
+            list-style: none;
+
+
+        }
+        p{
+            transition: all 2s;
+width: 40px;
+opacity: 0;
+
+        }
+
+        ul:nth-last-child(3) li{
+            background: url("psb.jpg") center;
+            background-size: contain;
+
+        }
+        ul:nth-last-child(2) li{
+            background: url("psb (1).jpg") center;
+            background-size: contain;
+        }
+    ul:nth-last-child(1) li{
+       background: url("mmexport1513174291654.jpg") center;
+        background-size: contain;
+    }
+        ul:nth-last-child(3):hover p{
+            color: red;
+            transform: translate(50px,160px);
+           font-size: 80px;
+            width: 170px;
+            opacity: 1;
+        }
+        ul:nth-last-child(2):hover p{
+            color: #00c1de;
+            transform: translate(80px,160px);
+            font-size: 80px;
+            width: 170px;
+            opacity: 1;
+        }
+        ul:nth-last-child(1):hover p{
+            color: red;
+            transform: translate(80px,160px);
+            font-size: 80px;
+            width: 170px;
+            opacity: 1;
+
+        }
+        ul:nth-last-child(1):hover .xin{
+            color: red;
+            transform: translate(80px,160px);
+          animation: xin 1s infinite;
+            background-color: transparent;
+            font-size: 80px;
+            width: 170px;
+            opacity: 1;
+
+        }
+        @keyframes xin {
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(0.5);
+            }
+        }
+        span{
+            color: yellow;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+    <ul><li><p>媳妇</p></li></ul>
+    <ul><li><p>我</p></li></ul>
+    <ul><li><p >爱<span>你</span></p><p class="xin">❤</p></li></ul>
+</div>
+
+
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script>
+$(function () {
+setInterval(function () {
+    $('span').fadeToggle();
+},700);
+
+
+$('ul').hover(function () {
+
+  $(this).stop().animate({
+      width:266
+  },1000).siblings().stop().animate({width:67},1000)
+},function() {
+        $('ul').stop().animate({width:133},1000)
+    })
+
+
+
+
+
+
+
+
+})
+
+
+
+</script>
+</html>
